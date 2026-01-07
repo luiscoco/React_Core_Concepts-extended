@@ -136,7 +136,7 @@ useLayoutEffect(() => {
 
 ### 14) Imperative handles (`src/components/ImperativeHandleExample.jsx`)
 
-
+<img width="1503" height="304" alt="image" src="https://github.com/user-attachments/assets/3241b372-2f0a-4e27-8a00-879ed34ec78b" />
 
 ```jsx
 useImperativeHandle(ref, () => ({ toggle: () => setOpen((o) => !o) }));
