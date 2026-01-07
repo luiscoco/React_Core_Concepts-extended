@@ -21,6 +21,8 @@ const [count, setCount] = useState(0);
 
 ### 2) Effects and cleanup (`src/components/EffectExample.jsx`)
 
+<img width="377" height="175" alt="image" src="https://github.com/user-attachments/assets/5aca7f02-1fca-47b3-bc5d-1a697ec932d3" />
+
 ```jsx
 useEffect(() => {
   const id = setInterval(() => setSeconds((prev) => prev + 1), 1000);
@@ -30,12 +32,16 @@ useEffect(() => {
 
 ### 3) Context and `useContext` (`src/components/ContextExample.jsx`)
 
+<img width="531" height="374" alt="image" src="https://github.com/user-attachments/assets/94810383-9fca-4799-8619-6a998b717e50" />
+
 ```jsx
 const ThemeContext = createContext();
 <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
 ```
 
 ### 4) Lifting state up (`src/components/LiftingStateExample.jsx`)
+
+<img width="531" height="316" alt="image" src="https://github.com/user-attachments/assets/d40cf85c-7940-492a-b733-2b75e9720e14" />
 
 ```jsx
 <TemperatureInput value={celsius} onChange={handleCelsiusChange} />
@@ -44,11 +50,15 @@ const ThemeContext = createContext();
 
 ### 5) Controlled forms (`src/components/ControlledFormExample.jsx`)
 
+<img width="534" height="263" alt="image" src="https://github.com/user-attachments/assets/39729a6a-608b-4b75-a74a-1003607d8a27" />
+
 ```jsx
 <input value={name} onChange={(e) => setName(e.target.value)} />
 ```
 
 ### 6) Class lifecycle (`src/components/ClassLifecycleExample.jsx`)
+
+<img width="658" height="230" alt="image" src="https://github.com/user-attachments/assets/6a1e0570-647d-4629-a671-9d58aa10a19d" />
 
 ```jsx
 componentDidMount() {
@@ -58,12 +68,16 @@ componentDidMount() {
 
 ### 7) Reducers (`src/components/ReducerExample.jsx`)
 
+<img width="772" height="272" alt="image" src="https://github.com/user-attachments/assets/167f1536-6c5e-4d89-8a71-45f6a851c320" />
+
 ```jsx
 const [state, dispatch] = useReducer(reducer, { count: 0 });
 dispatch({ type: 'increment' });
 ```
 
 ### 8) Memoization and callbacks (`src/components/MemoExample.jsx`)
+
+<img width="845" height="403" alt="image" src="https://github.com/user-attachments/assets/10a74bfd-7570-4e24-8ba1-e84ab4ccbf2e" />
 
 ```jsx
 const doubled = useMemo(() => count * 2, [count]);
