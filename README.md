@@ -19,9 +19,7 @@ const [count, setCount] = useState(0);
 <button onClick={() => setCount(count + 1)}>Increment</button>
 ```
 
-
-
-2) Effects and cleanup (`src/components/EffectExample.jsx`)
+### 2) Effects and cleanup (`src/components/EffectExample.jsx`)
 
 ```jsx
 useEffect(() => {
@@ -30,27 +28,27 @@ useEffect(() => {
 }, []);
 ```
 
-3) Context and `useContext` (`src/components/ContextExample.jsx`)
+### 3) Context and `useContext` (`src/components/ContextExample.jsx`)
 
 ```jsx
 const ThemeContext = createContext();
 <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
 ```
 
-4) Lifting state up (`src/components/LiftingStateExample.jsx`)
+### 4) Lifting state up (`src/components/LiftingStateExample.jsx`)
 
 ```jsx
 <TemperatureInput value={celsius} onChange={handleCelsiusChange} />
 <TemperatureInput value={fahrenheit} onChange={handleFahrenheitChange} />
 ```
 
-5) Controlled forms (`src/components/ControlledFormExample.jsx`)
+### 5) Controlled forms (`src/components/ControlledFormExample.jsx`)
 
 ```jsx
 <input value={name} onChange={(e) => setName(e.target.value)} />
 ```
 
-6) Class lifecycle (`src/components/ClassLifecycleExample.jsx`)
+### 6) Class lifecycle (`src/components/ClassLifecycleExample.jsx`)
 
 ```jsx
 componentDidMount() {
@@ -58,28 +56,28 @@ componentDidMount() {
 }
 ```
 
-7) Reducers (`src/components/ReducerExample.jsx`)
+### 7) Reducers (`src/components/ReducerExample.jsx`)
 
 ```jsx
 const [state, dispatch] = useReducer(reducer, { count: 0 });
 dispatch({ type: 'increment' });
 ```
 
-8) Memoization and callbacks (`src/components/MemoExample.jsx`)
+### 8) Memoization and callbacks (`src/components/MemoExample.jsx`)
 
 ```jsx
 const doubled = useMemo(() => count * 2, [count]);
 const handleChange = useCallback((e) => setText(e.target.value), []);
 ```
 
-9) Refs (`src/components/RefExample.jsx`)
+### 9) Refs (`src/components/RefExample.jsx`)
 
 ```jsx
 const inputRef = useRef(null);
 inputRef.current?.focus();
 ```
 
-10) `forwardRef` (`src/components/ForwardRefExample.jsx`)
+### 10) `forwardRef` (`src/components/ForwardRefExample.jsx`)
 
 ```jsx
 const FancyInput = forwardRef(function FancyInput(props, ref) {
@@ -87,13 +85,13 @@ const FancyInput = forwardRef(function FancyInput(props, ref) {
 });
 ```
 
-11) Portals (`src/components/PortalExample.jsx`)
+### 11) Portals (`src/components/PortalExample.jsx`)
 
 ```jsx
 return ReactDOM.createPortal(<div>Portal content</div>, portalRoot);
 ```
 
-12) Lazy loading + Suspense (`src/components/SuspenseLazyExample.jsx`)
+### 12) Lazy loading + Suspense (`src/components/SuspenseLazyExample.jsx`)
 
 ```jsx
 const LazyGreeting = React.lazy(() => {
@@ -104,7 +102,7 @@ const LazyGreeting = React.lazy(() => {
 <Suspense fallback={<p>Loading greeting.</p>}><LazyGreeting /></Suspense>
 ```
 
-13) Layout effects (`src/components/LayoutEffectExample.jsx`)
+### 13) Layout effects (`src/components/LayoutEffectExample.jsx`)
 
 ```jsx
 useLayoutEffect(() => {
@@ -112,13 +110,13 @@ useLayoutEffect(() => {
 });
 ```
 
-14) Imperative handles (`src/components/ImperativeHandleExample.jsx`)
+### 14) Imperative handles (`src/components/ImperativeHandleExample.jsx`)
 
 ```jsx
 useImperativeHandle(ref, () => ({ toggle: () => setOpen((o) => !o) }));
 ```
 
-15) Error boundaries (`src/components/ErrorBoundary.jsx`)
+### 15) Error boundaries (`src/components/ErrorBoundary.jsx`)
 
 ```jsx
 static getDerivedStateFromError() {
@@ -126,7 +124,7 @@ static getDerivedStateFromError() {
 }
 ```
 
-16) Client-side routing (`src/App.jsx`)
+### 16) Client-side routing (`src/App.jsx`)
 
 ```jsx
 <Routes>
