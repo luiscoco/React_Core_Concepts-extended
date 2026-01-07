@@ -86,12 +86,16 @@ const handleChange = useCallback((e) => setText(e.target.value), []);
 
 ### 9) Refs (`src/components/RefExample.jsx`)
 
+<img width="884" height="228" alt="image" src="https://github.com/user-attachments/assets/125f7ff4-fff3-45d2-b336-074904b69642" />
+
 ```jsx
 const inputRef = useRef(null);
 inputRef.current?.focus();
 ```
 
 ### 10) `forwardRef` (`src/components/ForwardRefExample.jsx`)
+
+<img width="1000" height="234" alt="image" src="https://github.com/user-attachments/assets/229b5fdd-416c-4680-a8ae-441d1d1ecf68" />
 
 ```jsx
 const FancyInput = forwardRef(function FancyInput(props, ref) {
@@ -101,11 +105,15 @@ const FancyInput = forwardRef(function FancyInput(props, ref) {
 
 ### 11) Portals (`src/components/PortalExample.jsx`)
 
+<img width="1152" height="376" alt="image" src="https://github.com/user-attachments/assets/98c3d32e-cdce-4ee7-a6e2-2987a7f0d959" />
+
 ```jsx
 return ReactDOM.createPortal(<div>Portal content</div>, portalRoot);
 ```
 
 ### 12) Lazy loading + Suspense (`src/components/SuspenseLazyExample.jsx`)
+
+<img width="1149" height="273" alt="image" src="https://github.com/user-attachments/assets/c2754721-19f8-4c98-8d1c-e97325e19740" />
 
 ```jsx
 const LazyGreeting = React.lazy(() => {
@@ -118,6 +126,8 @@ const LazyGreeting = React.lazy(() => {
 
 ### 13) Layout effects (`src/components/LayoutEffectExample.jsx`)
 
+<img width="1296" height="308" alt="image" src="https://github.com/user-attachments/assets/e7a944cf-1e5e-49d0-9d54-843306d8b831" />
+
 ```jsx
 useLayoutEffect(() => {
   setWidth(boxRef.current.getBoundingClientRect().width);
@@ -125,6 +135,8 @@ useLayoutEffect(() => {
 ```
 
 ### 14) Imperative handles (`src/components/ImperativeHandleExample.jsx`)
+
+
 
 ```jsx
 useImperativeHandle(ref, () => ({ toggle: () => setOpen((o) => !o) }));
