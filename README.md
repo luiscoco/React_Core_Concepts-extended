@@ -12,7 +12,7 @@ Each feature maps to one route in `src/App.jsx` and one component in `src/compon
 
 ### 1) State with `useState` (`src/components/StateExample.jsx`)
 
-<img width="1515" height="349" alt="image" src="https://github.com/user-attachments/assets/cd9659d5-0369-48a2-98a8-4854135b5b7d" />
+<img width="274" height="232" alt="image" src="https://github.com/user-attachments/assets/e2b43cb6-e39d-4257-a17d-fb0cbf676330" />
 
 ```jsx
 const [count, setCount] = useState(0);
