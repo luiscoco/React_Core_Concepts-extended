@@ -10,7 +10,7 @@ This Vite + React playground demonstrates many core React concepts through small
 
 Each feature maps to one route in `src/App.jsx` and one component in `src/components/`.
 
-1) State with `useState` (`src/components/StateExample.jsx`)
+### 1) State with `useState` (`src/components/StateExample.jsx`)
 
 <img width="1515" height="349" alt="image" src="https://github.com/user-attachments/assets/cd9659d5-0369-48a2-98a8-4854135b5b7d" />
 
