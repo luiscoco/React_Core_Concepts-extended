@@ -2,6 +2,10 @@
 
 This Vite + React playground demonstrates many core React concepts through small, focused examples. It is designed to be a quick reference: click a route in the UI, see the concept in action, and inspect the corresponding component for the minimal code needed to explain the idea.
 
+## Demo 
+
+<img width="1549" height="406" alt="image" src="https://github.com/user-attachments/assets/922e1d2c-e6bd-40a1-a285-78333f4f082f" />
+
 ## Features (with snippets)
 
 Each feature maps to one route in `src/App.jsx` and one component in `src/components/`.
