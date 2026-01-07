@@ -12,10 +12,14 @@ Each feature maps to one route in `src/App.jsx` and one component in `src/compon
 
 1) State with `useState` (`src/components/StateExample.jsx`)
 
+<img width="1515" height="349" alt="image" src="https://github.com/user-attachments/assets/cd9659d5-0369-48a2-98a8-4854135b5b7d" />
+
 ```jsx
 const [count, setCount] = useState(0);
 <button onClick={() => setCount(count + 1)}>Increment</button>
 ```
+
+
 
 2) Effects and cleanup (`src/components/EffectExample.jsx`)
 
