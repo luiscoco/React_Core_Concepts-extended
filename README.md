@@ -134,19 +134,19 @@ static getDerivedStateFromError() {
 
 ## How to run
 
-1. Install dependencies:
+### 1) Install dependencies:
 
 ```bash
 npm install
 ```
 
-2. Start the dev server:
+### 2) Start the dev server:
 
 ```bash
 npm run dev
 ```
 
-3. Open the URL shown in your terminal (usually http://localhost:5173).
+### 3) Open the URL shown in your terminal (usually http://localhost:5173).
 
 Then click through the navigation links at the top to explore each concept.
 
